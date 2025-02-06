@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AJAX and API</title>
+		<style>
+			@keyframes gradient {
+				0% { background-position: 0% 50%; }
+				50% { background-position: 100% 50%; }
+				100% { background-position: 0% 50%; }
+			}
+
+			body {
+				font-family: 'Arial', sans-serif;
+				margin: 0;
+				padding: 20px;
+				min-height: 100vh;
+				background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+				background-size: 400% 400%;
+				animation: gradient 15s ease infinite;
+			}
+
+			.container {
+				max-width: 600px;
+				margin: 0 auto;
+				text-align: center;
+				background-color: rgba(255, 255, 255, 0.9);
+				padding: 30px;
+				border-radius: 20px;
+				box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+				backdrop-filter: blur(10px);
+			}
+
+			h1 {
+				color: #2c3e50;
+				margin-bottom: 25px;
+				font-size: 2em;
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+			}
+
+			.button-container {
+				display: flex;
+				gap: 15px;
+				justify-content: center;
+				margin: 20px 0;
+			}
+
+			button {
+				background: linear-gradient(45deg, #2193b0, #6dd5ed);
+				color: white;
+				border: none;
+				padding: 15px 30px;
+				border-radius: 50px;
+				font-size: 18px;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+			}
+
+			button:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+			}
+
+			.reset-btn {
+				background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+				color: white;
+				border: none;
+				padding: 15px 30px;
+				border-radius: 50px;
+				font-size: 18px;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+			}
+
+			.reset-btn:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+			}
+
+			#jokes {
+				list-style: none;
+				padding: 0;
+				margin-top: 30px;
+			}
+
+			#jokes li {
+				background-color: rgba(255, 255, 255, 0.95);
+				margin: 15px 0;
+				padding: 20px;
+				border-radius: 15px;
+				text-align: left;
+				box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+				transition: transform 0.3s ease;
+			}
+
+			#jokes li:hover {
+				transform: scale(1.02);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Dad Joke Generator @reannn22</h1>
+			<div class="button-container">
+				<button>Klik</button>
+				<button class="reset-btn" onclick="document.getElementById('jokes').innerHTML = ''">Reset</button>
+			</div>
+			<ul id="jokes"></ul>
+		</div>
+
+		<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
