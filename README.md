@@ -57,3 +57,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [icanhazdadjoke API](https://icanhazdadjoke.com/) for providing the dad jokes
 - Icons from [FontAwesome](https://fontawesome.com/)
+
+// Copyright Reyhan Capri Moraga
