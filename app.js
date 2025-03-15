@@ -1,3 +1,4 @@
+// Copyright Reyhan Capri Moraga
 const jokes = document.querySelector('#jokes');
 const button = document.querySelector('button');
 
