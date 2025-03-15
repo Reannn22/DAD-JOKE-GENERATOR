@@ -1,4 +1,4 @@
-# Dad Joke Generator
+# Dad Joke Generator by Reyhan Capri Moraga
 
 A fun and interactive web application that generates random dad jokes to brighten your day! 😄
 
